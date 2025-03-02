@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的导航站</h1>
+        </header>
+
+        <div class="password-section">
+            <input type="password" id="password" placeholder="请输入密码查看隐藏链接">
+            <button id="decrypt-btn">解锁</button>
+        </div>
+
+        <div class="navigation">
+            <h2>公开导航</h2>
+            <div class="public-links">
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="https://www.baidu.com" target="_blank">百度</a>
+                <a href="https://www.bing.com" target="_blank">必应</a>
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+            </div>
+
+            <h2>隐藏导航</h2>
+            <div id="encrypted-links" class="encrypted-links">
+                <!-- 解密后的链接将显示在这里 -->
+                <p class="hint">输入正确密码后显示隐藏链接</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
